@@ -1,0 +1,337 @@
+body {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top_section {
+    background: linear-gradient(to right, rgb(240, 207, 58), rgb(249, 75, 206));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 56px;
+}
+
+.social_media ul li {
+    display: inline-block;
+    list-style: none;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 16px;
+    margin-left: -5px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.social_media ul li img {
+    color: white;
+    height: 22px;
+}
+
+.social_media ul li img:hover {
+    transform: scale(1.08);
+}
+
+.number ul li {
+    display: inline-block;
+    padding-left: 10px;
+    color: white;
+    align-items: center;
+    cursor: pointer;
+}
+
+.number ul li img {
+    height: 33px;
+}
+
+.but1 a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.but1 a:hover {
+    transform: scale(1.2);
+}
+
+.second_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+}
+
+.header ul li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.header ul li:hover {
+    transform: scale(1.02);
+    color: rgb(215, 83, 83);
+}
+
+.logo {
+    display: flex;
+}
+
+.logo ul li {
+    list-style: none;
+    margin-left: -26px;
+    font-weight: 700;
+    font-size: 22px;
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .top_section {
+        flex-direction: column;
+        height: auto;
+    }
+    .social_media ul li {
+        margin-bottom: 10px;
+    }
+
+    .number ul li {
+        margin-bottom: 10px;
+    }
+
+    .but1 a {
+        font-size: 16px;
+    }
+
+    .second_section {
+        flex-direction: column;
+    }
+
+    .header ul li {
+        padding-left: 10px;
+    }
+
+    .logo ul li {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .top_section {
+        height: auto;
+    }
+
+    .social_media ul li {
+        margin-bottom: 5px;
+    }
+
+    .number ul li {
+        margin-bottom: 5px;
+    }
+
+    .but1 a {
+        font-size: 14px;
+    }
+    .header ul li {
+        padding-left: 5px;
+    }
+}
+
+/* --------------------------------- */
+
+.main-image {
+    position: relative; 
+    background: url('./images/mainimage.jpg') no-repeat center center;
+    background-size: cover; 
+    height: 60vh;
+}
+
+.main-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(53, 50, 50, 0.605); 
+    z-index: 1; 
+}
+.main-content {
+    z-index: 2;
+    color: white;
+    position: absolute;
+    justify-content: center;
+    max-width: 1000px;
+    left: 200px;
+    top: 100px;
+}
+.buy{
+    background-color: rgb(236, 165, 35);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.fa-search{
+    background-color: black;
+    color: white;
+    padding: 22px 8px 22px 8px;
+}
+button{
+    cursor: pointer;
+    z-index: 3;
+    height: 30px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    &:hover{
+        scale: 1.03;
+    }
+}
+.btnn1{
+    background: linear-gradient(to right, rgb(240, 207, 58), rgb(249, 75, 206));
+    color: white;
+    border:none;
+    margin-right: 10px;
+}
+
+.main-content h1{
+    font-size: 45px;
+    margin-top: -6px;
+    margin-bottom: -5px;
+}
+.main-content::before{
+   content: '';
+   position: absolute;
+   left: -20px;
+   height: 220px;
+   width: 6px;
+   background: linear-gradient(to bottom, rgb(240, 207, 58), rgb(249, 75, 206));
+}
+
+.content2{
+    background: linear-gradient(to right, rgb(240, 207, 58), rgb(249, 75, 206));
+    display: flex;
+    align-items: center;
+    height: 160px;
+    justify-content: space-evenly;
+    padding-left:5% ;
+    padding-right:5%;
+    color: white;
+}
+.c12{
+     width: 350px;
+}
+.c12 i{
+    border: 2px solid white;
+    padding: 8px;
+    border-radius: 50%;
+}
+.c12 i, .c12 h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+.c12 p{
+    margin-top: -10px;
+  
+}
+
+/* ------------------- */
+
+.about{
+    height: 67vh; 
+    display: inline-flex;
+    background: url('./images/aboutimg.jpeg') no-repeat center center;
+    padding-left: 12%;
+    padding-right: 10%;
+}
+.aboutus p{
+    line-height: 27px;
+}
+.head{
+    font-size: 38px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 1%;
+    margin-top: 0;
+    padding-top: 4%;
+}
+
+.head::after{
+    background: linear-gradient(to right, rgb(240, 207, 58), rgb(249, 75, 206));
+    content: '';
+    margin-top: 1%;
+    display: block;
+    height: 4px;
+    width: 68px;
+}
+
+.b{
+    padding: 16px;
+    font-weight: 600;
+    padding-bottom: 28px;
+}
+
+.services{
+    height: 67vh; 
+    padding-left: 12%;
+    padding-right: 10%;
+    background: linear-gradient(to right ,rgb(239, 231, 231),rgb(235, 230, 216));
+}
+.service{
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 260px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: -30px ;
+    margin-left: 21%;
+    font-size: 14px;
+}
+
+.service i{
+    background:linear-gradient(to right, rgb(240, 207, 58), rgb(249, 75, 206));
+    z-index: 4;
+    padding-right: 101px;
+    padding: 23px;
+    font-size: 23px;
+    color: white;
+}
+.card{
+    display: inline-flex;
+}
+.c{
+    padding: 35px;
+}
+.man {
+    position: relative; 
+  }
+  .man img{
+     position: relative;
+     z-index: 1;
+  }
+  .man::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 90%; 
+    bottom: 86px;
+    height: 15%;
+    border-left: 4px solid rgb(227, 193, 41);
+    border-right: 4px solid rgb(243, 85, 222);
+
+    border-bottom: 4px solid transparent; 
+    border-image: linear-gradient(to right, rgb(240, 207, 58), rgb(249, 75, 206)) 1; 
+
+    border-top: 4px solid transparent; 
+    border-image: linear-gradient(to right, rgb(240, 207, 58), rgb(249, 75, 206)) 1;
+  }
